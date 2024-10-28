@@ -12,9 +12,11 @@ Organisms in nature are subjected to a variety of stressors, often simultaneousl
 
 ## Data
 All data required for running these models is provided as a supplement Excel file in the manuscript <doi: XXX>
+
 custom.txt -- Custom GO database, can be created from Table S11 with code in fullScript.R, but this provides a shortcut.
 
 ## Code 
 preChecks.R -- R code for creating preliminary PCA plot and heatmap for lab stressor pannel transcriptome data.
+
 fullScript.R -- R code for data upload, formatting, running all models, and creating all figures.
 

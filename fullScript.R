@@ -529,6 +529,10 @@ deseq23 <- resSite[which(abs(resSite$log2FoldChange) > 0.5 & resSite$padj < 0.05
 
 #write.csv(deseq23, "DEseqResArb23.csv")
 
+compTable <- deseq23 %>%
+  dplyr::select(gene, log2FoldChange, comp) %>%
+  pivot_wider(names_from= comp, values_from = log2FoldChange) 
+
 # Random Forest ----
 ## Identify important genes ----
 
